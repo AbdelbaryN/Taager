@@ -1,5 +1,6 @@
 package Pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -8,17 +9,17 @@ import java.time.Duration;
 
 public class PageBase {
 
-    protected WebDriver driver;
+    public WebDriver driver;
 
     public PageBase(WebDriver driver) {
-        PageFactory.initElements(driver, this);
+        this.driver = driver;
     }
 
-    protected static void clickButton(WebElement button) {
-        button.click();
+    public void clickButton(By button) {
+        driver.findElement(button).click();
     }
 
-    protected static void setText(WebElement textElement, String value) {
-        textElement.sendKeys(value);
+    public void setText(By textElement, String value) {
+        driver.findElement(textElement).sendKeys(value);
     }
 }

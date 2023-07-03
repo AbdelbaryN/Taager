@@ -1,5 +1,6 @@
 package Pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -11,49 +12,44 @@ public class LoginPage extends PageBase{
         super(driver);
     }
 
-    @FindBy(css = "button.btn.auth-btn.change-type-btn.body2--medium")
-    WebElement LoginWithEmail;
+    By LoginWithEmail = By.cssSelector("button.btn.auth-btn.change-type-btn.body2--medium");
 
-    @FindBy(css = "input.form-control.body2--medium.ng-untouched.ng-pristine.ng-invalid.ng-star-inserted")
-    WebElement email;
+    By email = By.cssSelector("input.form-control.body2--medium.ng-untouched.ng-pristine.ng-invalid.ng-star-inserted");
 
-    @FindBy(css = "input.form-control.body2--medium.ng-untouched.ng-pristine.ng-invalid")
-    WebElement password;
+    By password = By.cssSelector("input.form-control.body2--medium.ng-untouched.ng-pristine.ng-invalid");
 
-    @FindBy(css = "button.btn.auth-btn.register-btn.body2--medium")
-    WebElement loginBtn;
+    By loginBtn = By.cssSelector("button.btn.auth-btn.register-btn.body2--medium");
 
-    @FindBy(css = "button.dialog__action-btn.body1--medium")
-    WebElement letsStart;
+    /*
+     * Skip intro
+     * */
 
-    @FindBy(css = "div.body2--medium.wrapper__footer__button__text.ng-star-inserted")
-    WebElement next1;
+    By letsStart = By.cssSelector("button.dialog__action-btn.body1--medium");
 
-    @FindBy(css = "div.wrapper__footer__button.ng-star-inserted")
-    WebElement next2;
+    By next1 = By.cssSelector("div.body2--medium.wrapper__footer__button__text.ng-star-inserted");
 
-    @FindBy(css = "div.wrapper__footer__button.ng-star-inserted")
-    WebElement next3;
+    By next2 = By.cssSelector("div.wrapper__footer__button.ng-star-inserted");
 
-    @FindBy(css = "div.wrapper__footer__button.ng-star-inserted")
-    WebElement next4;
+    By next3 = By.cssSelector("div.wrapper__footer__button.ng-star-inserted");
 
-    @FindBy(css = "p.caption2--regular.content-medium-color")
-    WebElement BackToMain;
+    By next4 = By.cssSelector("div.wrapper__footer__button.ng-star-inserted");
 
-    public void skipIntro(){
-        clickButton(letsStart);
-        clickButton(next1);
-        clickButton(next2);
-        clickButton(next3);
-        clickButton(next4);
-        clickButton(BackToMain);
-    }
+    By BackToMain = By.cssSelector("p.caption2--regular.content-medium-color");
 
     public void loginWithEmail(String Email, String Pass){
         clickButton(LoginWithEmail);
         setText(email, Email);
         setText(password, Pass);
         clickButton(loginBtn);
+    }
+
+    public HomePage skipIntro(){
+        clickButton(letsStart);
+        clickButton(next1);
+        clickButton(next2);
+        clickButton(next3);
+        clickButton(next4);
+        clickButton(BackToMain);
+        return new HomePage(driver);
     }
 }

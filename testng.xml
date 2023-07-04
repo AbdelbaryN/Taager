@@ -3,8 +3,9 @@
 <suite name="Test Suite">
     <test name="Test 1">
         <classes>
-            <class name="Tests.HomeTest" />
-            <class name="Tests.CheckoutTest"></class>
+            <class name="Tests.LoginTest" />
+            <class name="Tests.BrowseItemsTest" />
+            <class name="Tests.AddProductToCartTest" />
         </classes>
     </test>
 </suite>

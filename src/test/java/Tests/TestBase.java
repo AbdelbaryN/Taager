@@ -24,6 +24,7 @@ public class TestBase {
         //options.addArguments("--remote-allow-origins=*");
         //driver = new ChromeDriver(options);
         driver = new FirefoxDriver();
+        //driver = new EdgeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
         driver.navigate().to("https://taager.com/eg/");

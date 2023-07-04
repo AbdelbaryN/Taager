@@ -4,17 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6823388c-8732-48fb-9e97-737bc742a874" name="Changes" comment="Login and skip intro">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/BrowseItemsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+    <list default="true" id="6823388c-8732-48fb-9e97-737bc742a874" name="Changes" comment="Add Browsing items ,and Add items to cart functions">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/CheckoutPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/CheckoutTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/LandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/LandingPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/PageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/PageBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/HomeTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/AddProductToCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/AddProductToCartTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,19 +47,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.CommitDialog&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="TestNG.AddProductToCartTest">
+}</component>
+  <component name="RunManager" selected="TestNG.CheckoutTest">
     <configuration name="AddProductToCartTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Taager" />
       <extension name="coverage">
@@ -72,6 +70,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.AddProductToCartTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckoutTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Taager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.CheckoutTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -124,30 +139,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Taager" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.LoginTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CheckoutTest" />
         <item itemvalue="TestNG.AddProductToCartTest" />
         <item itemvalue="TestNG.E:/Nezam/Taager/Taager/testng.xml" />
         <item itemvalue="TestNG.HomeTest" />
         <item itemvalue="TestNG.HomeTest.Checkout" />
-        <item itemvalue="TestNG.LoginTest" />
       </list>
     </recent_temporary>
   </component>
@@ -167,11 +165,20 @@
       <option name="project" value="LOCAL" />
       <updated>1686658147649</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add Browsing items ,and Add items to cart functions">
+      <option name="closed" value="true" />
+      <created>1688384149120</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1688384149120</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Login and skip intro" />
-    <option name="LAST_COMMIT_MESSAGE" value="Login and skip intro" />
+    <MESSAGE value="Add Browsing items ,and Add items to cart functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Browsing items ,and Add items to cart functions" />
   </component>
 </project>

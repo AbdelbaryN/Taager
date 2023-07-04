@@ -1,17 +1,19 @@
 package Tests;
 
+import Pages.CheckoutPage;
 import Pages.HomePage;
 import Pages.LandingPage;
 import Pages.LoginPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class AddProductToCartTest extends TestBase{
-
+public class CheckoutTest extends TestBase{
     HomePage homeObj;
 
     LandingPage landingObject;
     LoginPage loginObject;
+
+    CheckoutPage checkoutObj;
 
     @Test(priority = 1)
     public void testOpenLoginPage() throws InterruptedException {
@@ -32,19 +34,13 @@ public class AddProductToCartTest extends TestBase{
     public void BrowseItem(){
         homeObj = new HomePage(driver);
         homeObj.SearchForAProduct();
+        homeObj.clickOrderNow();
     }
 
     @Test(priority = 4)
-    public void AddTocart() throws InterruptedException {
-        homeObj.AddProductToCart();
-        Thread.sleep(5000);
-        Assert.assertEquals(homeObj.cartN.getText(), "1");
+    public void checkout() throws InterruptedException {
+        checkoutObj = new CheckoutPage(driver);
+        checkoutObj.PlaceAnOrder("Akaza", "01140404000", "325 safdgfsfda");
     }
 
-    @Test(priority = 5)
-    public void DeleteFromCart() throws InterruptedException {
-        homeObj.deleteAllItems();
-        Thread.sleep(5000);
-        Assert.assertEquals(homeObj.cartN.getText(), "0");
-    }
 }

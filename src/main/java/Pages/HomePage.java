@@ -26,6 +26,14 @@ public class HomePage extends PageBase{
     By cartnumber = By.xpath("/html/body/app-root/app-default-layout/mat-sidenav-container/mat-sidenav-content/app-header/app-main-header/div/app-sticky-header/div/app-shopping-navigation/div/div[1]/p");
 
     public WebElement cartN = driver.findElement(cartnumber);
+
+    By deleteAll = By.xpath("/html/body/app-root/app-default-layout/mat-sidenav-container/mat-sidenav-content/div/app-cart/div/div/div[1]/app-cart-products-table/div/div[1]/button");
+
+    By confirmDelete = By.xpath("/html/body/div[4]/div[2]/div/mat-dialog-container/app-confirm-delete-item/div/div/button[2]/i");
+
+    By ordernow = By.cssSelector("button.action-button.order-now-button.clickable");
+
+
     public void SearchForAProduct(){
         clickButton(searchbar);
         setText(searchbar,"Air Pods M30 Pro");
@@ -33,9 +41,18 @@ public class HomePage extends PageBase{
         clickButton(airpods);
 
     }
+
+    public void clickOrderNow(){
+        clickButton(ordernow);
+    }
     public void AddProductToCart(){
         clickButton(addToCart);
         clickButton(cartIcon);
+    }
+
+    public void deleteAllItems(){
+        clickButton(deleteAll);
+        clickButton(confirmDelete);
     }
 
 }

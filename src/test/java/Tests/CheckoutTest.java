@@ -4,6 +4,7 @@ import Pages.CheckoutPage;
 import Pages.HomePage;
 import Pages.LandingPage;
 import Pages.LoginPage;
+import io.qameta.allure.Step;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -15,7 +16,8 @@ public class CheckoutTest extends TestBase{
 
     CheckoutPage checkoutObj;
 
-    @Test(priority = 1)
+    @Step("Open login page")
+    @Test(priority = 1, description = "Open login page")
     public void testOpenLoginPage() throws InterruptedException {
         landingObject = new LandingPage(driver);
         landingObject.openTheDropdown();
@@ -23,6 +25,7 @@ public class CheckoutTest extends TestBase{
         Assert.assertEquals(driver.getCurrentUrl(), "https://taager.com/eg/authv2/login");
 
     }
+    @Step("Login with valid credentials")
     @Test(priority = 2)
     public void loginWithValidCredentials(){
         loginObject.loginWithEmail("abdelbary.nasser@taager.com","BodyTest123#");
@@ -30,6 +33,7 @@ public class CheckoutTest extends TestBase{
         Assert.assertEquals(driver.getCurrentUrl(), "https://taager.com/eg/products");
     }
 
+    @Step("Browse Items")
     @Test(priority = 3)
     public void BrowseItem(){
         homeObj = new HomePage(driver);
@@ -37,6 +41,7 @@ public class CheckoutTest extends TestBase{
         homeObj.clickOrderNow();
     }
 
+    @Step("Complete the Checkout")
     @Test(priority = 4)
     public void checkout() throws InterruptedException {
         checkoutObj = new CheckoutPage(driver);

@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6823388c-8732-48fb-9e97-737bc742a874" name="Changes" comment="Add Browsing items ,and Add items to cart functions">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/CheckoutPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/CheckoutTest.java" afterDir="false" />
+    <list default="true" id="6823388c-8732-48fb-9e97-737bc742a874" name="Changes" comment="Updating the code and adding a new feature">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/AddProductToCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/AddProductToCartTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/CheckoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/CheckoutTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,12 +168,21 @@
       <option name="project" value="LOCAL" />
       <updated>1688384149120</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Updating the code and adding a new feature">
+      <option name="closed" value="true" />
+      <created>1688460781584</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1688460781584</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Login and skip intro" />
     <MESSAGE value="Add Browsing items ,and Add items to cart functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Browsing items ,and Add items to cart functions" />
+    <MESSAGE value="Updating the code and adding a new feature" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating the code and adding a new feature" />
   </component>
 </project>

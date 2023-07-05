@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
@@ -44,11 +46,18 @@ public class LoginPage extends PageBase{
     }
 
     public HomePage skipIntro(){
+        WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(5));
+        w.until(ExpectedConditions.presenceOfElementLocated(letsStart));
         clickButton(letsStart);
+        w.until(ExpectedConditions.presenceOfElementLocated(next1));
         clickButton(next1);
+        w.until(ExpectedConditions.presenceOfElementLocated(next2));
         clickButton(next2);
+        w.until(ExpectedConditions.presenceOfElementLocated(next3));
         clickButton(next3);
+        w.until(ExpectedConditions.presenceOfElementLocated(next4));
         clickButton(next4);
+        w.until(ExpectedConditions.presenceOfElementLocated(BackToMain));
         clickButton(BackToMain);
         return new HomePage(driver);
     }

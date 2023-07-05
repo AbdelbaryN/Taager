@@ -12,6 +12,11 @@ public class HomePage extends PageBase{
     public HomePage(WebDriver driver) {
         super(driver);
     }
+    
+    
+    /*
+    * Egypt Market
+    * */
 
     By searchbar = By.xpath("/html/body/app-root/app-default-layout/mat-sidenav-container/mat-sidenav-content/app-header/app-main-header/div/app-sticky-header/div/app-products-search-bar/form/input");
 
@@ -32,13 +37,32 @@ public class HomePage extends PageBase{
     By confirmDelete = By.xpath("/html/body/div[4]/div[2]/div/mat-dialog-container/app-confirm-delete-item/div/div/button[2]/i");
 
     By ordernow = By.cssSelector("button.action-button.order-now-button.clickable");
+    
+    
+    
+    /*
+    * Test Market
+    * */
+    
+    By marketDropDown = By.xpath("//span[@class=\"mat-button-wrapper\"] / i[@class=\"icon icon-header-icons-chevron-down countries-dropdown-btn__dropdown-icon\"]");
+
+    By tmtMarket = By.xpath("//*[@id=\"mat-menu-panel-3\"]/div/button[4]");
+
+    By tmtProduct = By.xpath("//*[@id=\"category-products\"]/div[2]/div/div[3]/div[2]/div/app-product-card/div/div/a");
 
 
-    public void SearchForAProduct(){
+
+    public void changeMarket(){
+        clickButton(marketDropDown);
+        clickButton(tmtMarket);
+    }
+
+    public void SearchForAProduct(String productName){
         clickButton(searchbar);
-        setText(searchbar,"Air Pods M30 Pro");
+        setText(searchbar,productName);
         clickButton(searchIcon);
-        clickButton(airpods);
+        //clickButton(airpods);
+        clickButton(tmtProduct);
 
     }
 

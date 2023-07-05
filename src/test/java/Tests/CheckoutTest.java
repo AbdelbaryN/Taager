@@ -33,19 +33,26 @@ public class CheckoutTest extends TestBase{
         Assert.assertEquals(driver.getCurrentUrl(), "https://taager.com/eg/products");
     }
 
-    @Step("Browse Items")
+    @Step("change the market to TMT")
     @Test(priority = 3)
+    public void changeMarketToTMT() throws InterruptedException {
+        driver.get("https://taager.com/tt/products");
+        Thread.sleep(5000);
+    }
+
+    @Step("Browse Items")
+    @Test(priority = 4)
     public void BrowseItem(){
         homeObj = new HomePage(driver);
-        homeObj.SearchForAProduct();
+        homeObj.SearchForAProduct("سجادة عالية الامتصاص");
         homeObj.clickOrderNow();
     }
 
     @Step("Complete the Checkout")
-    @Test(priority = 4)
+    @Test(priority = 5)
     public void checkout() throws InterruptedException {
         checkoutObj = new CheckoutPage(driver);
-        checkoutObj.PlaceAnOrder("Akaza", "01140404000", "325 safdgfsfda");
+        checkoutObj.PlaceAnOrder("Akaza", "01274567800", "325 safdgfsfda");
     }
 
 }

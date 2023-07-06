@@ -79,4 +79,9 @@ public class HomePage extends PageBase{
         clickButton(confirmDelete);
     }
 
+    public void changeMarketToTMT() throws InterruptedException {
+        driver.get("https://taager.com/tt/products");
+        Thread.sleep(5000);
+    }
+
 }

@@ -17,7 +17,7 @@ public class TestBase {
     public WebDriver driver;
     //public static String BaseURL = "https://taager.com/eg/";
 
-    @BeforeTest
+    @BeforeMethod
     public void startDriver() {
         //ChromeOptions options = new ChromeOptions();
         //options.addArguments("--start-maximized");

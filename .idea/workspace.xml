@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6823388c-8732-48fb-9e97-737bc742a874" name="Changes" comment="Allure report added successfully">
+    <list default="true" id="6823388c-8732-48fb-9e97-737bc742a874" name="Changes" comment="Changing the market to TMT">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/AddProductToCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/AddProductToCartTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/BrowseItemsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/BrowseItemsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/CheckoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/CheckoutTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +59,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.CommitDialog&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.AddProductToCartTest">
+  <component name="RunManager" selected="TestNG.CheckoutTest">
     <configuration name="AddProductToCartTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Taager" />
       <extension name="coverage">
@@ -119,7 +121,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomeTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Taager" />
       <extension name="coverage">
         <pattern>
@@ -128,7 +130,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.HomeTest" />
+      <option name="MAIN_CLASS_NAME" value="Tests.LoginTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -138,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CheckoutTest" />
         <item itemvalue="TestNG.AddProductToCartTest" />
         <item itemvalue="TestNG.BrowseItemsTest" />
-        <item itemvalue="TestNG.CheckoutTest" />
+        <item itemvalue="TestNG.LoginTest" />
         <item itemvalue="TestNG.E:/Nezam/Taager/Taager/testng.xml" />
-        <item itemvalue="TestNG.HomeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -186,7 +188,15 @@
       <option name="project" value="LOCAL" />
       <updated>1688474055089</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Changing the market to TMT">
+      <option name="closed" value="true" />
+      <created>1688556265123</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1688556265123</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -194,6 +204,7 @@
     <MESSAGE value="Add Browsing items ,and Add items to cart functions" />
     <MESSAGE value="Updating the code and adding a new feature" />
     <MESSAGE value="Allure report added successfully" />
-    <option name="LAST_COMMIT_MESSAGE" value="Allure report added successfully" />
+    <MESSAGE value="Changing the market to TMT" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changing the market to TMT" />
   </component>
 </project>

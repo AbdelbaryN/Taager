@@ -16,16 +16,12 @@ public class LoginTest extends TestBase{
     LandingPage landingObject;
     LoginPage loginObject;
     HomePage homeObject;
-    @Test(priority = 1)
-    public void testOpenLoginPage() throws InterruptedException {
+
+    @Test()
+    public void loginWithValidCredentials() throws InterruptedException {
         landingObject = new LandingPage(driver);
         landingObject.openTheDropdown();
         loginObject = landingObject.openLoginpage();
-        Assert.assertEquals(driver.getCurrentUrl(), "https://taager.com/eg/authv2/login");
-
-    }
-    @Test(priority = 2)
-    public void loginWithValidCredentials(){
         loginObject.loginWithEmail("abdelbary.nasser@taager.com","BodyTest123#");
         homeObject = loginObject.skipIntro();
         Assert.assertEquals(driver.getCurrentUrl(), "https://taager.com/eg/products");
